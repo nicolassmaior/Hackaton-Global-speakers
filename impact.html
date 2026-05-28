@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>Global Speakers - Impacto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        details {
+            margin-bottom: 1rem;
+            border: 1px solid rgba(0,0,0,0.12);
+            border-radius: 16px;
+            background: transparent;
+            overflow: hidden;
+        }
+        summary {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1rem 1.1rem;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #07265d;
+            background: transparent;
+            border-radius: 16px;
+            transition: background 0.2s ease, color 0.2s ease;
+            list-style: none;
+            outline: none;
+        }
+        summary:hover,
+        details[open] summary {
+            background: rgba(4, 50, 120, 0.06);
+        }
+        summary::-webkit-details-marker,
+        summary::marker {
+            display: none;
+        }
+        summary::after {
+            content: "▼";
+            font-size: 0.8rem;
+            transform: rotate(0deg);
+            transition: transform 0.2s ease;
+        }
+        details[open] summary::after {
+            transform: rotate(-180deg);
+        }
+        details > *:not(summary) {
+            padding: 0 1.1rem 1rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">
+                <span class="logo">GS</span>
+                <div>
+                    <div class="brand-name">Global Speakers</div>
+                    <div class="brand-tag">Diversidade Cultural</div>
+                </div>
+            </div>
+            <nav class="topnav" aria-label="Menu principal">
+                <a href="index.html">Missão</a>
+                <a href="defender.html">Como se defender</a>
+                <a href="respect.html">Como respeitar</a>
+                <a href="acabar.html">Como acabar</a>
+                <a href="impact.html">Impacto</a>
+            </nav>
+        </header>
+
+        <div class="panel-grid">
+            <aside class="sidebar" aria-label="Menu lateral">
+                <div class="sidebar-title">Navegações</div>
+                <a class="sidebar-item " href="index.html">Missão</a>
+                <a class="sidebar-item " href="defender.html">Como se defender</a>
+                <a class="sidebar-item " href="respect.html">Como respeitar</a>
+                <a class="sidebar-item " href="acabar.html">Como acabar</a>
+                <a class="sidebar-item active" href="impact.html">Impacto</a>
+            </aside>
+
+            <main class="content">
+                <section class="hero">
+                    <div class="hero-copy">
+                        <span class="eyebrow">Futuro inclusivo</span>
+                        <h1>Diversidade cultural com atitude digital</h1>
+                        <p>Global Speakers é um espaço futurista e sério para entender como respeitar culturas, combater preconceito e construir diálogo coletivo.</p>
+                    </div>
+                    <div class="hero-visual" aria-hidden="true">
+                        <div class="glow-panel">
+                            <div class="glow-ring"></div>
+                            <div class="glow-core"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tab-content active" id="impact">
+                    <h2>Os Impactos Positivos da Valorização da Diversidade na Sociedade</h2>
+                    <p>Para tornar o texto mais acessível sem perder o tom profissional e formal, utilizei uma linguagem mais direta e estruturei os pontos principais de forma clara. Aqui está a versão revisada, fundamentada nas fontes:</p>
+
+                    <details>
+                        <summary>1. Fortalecimento da Autonomia e Autodefesa</summary>
+                        <p>O conhecimento sobre diversidade permite que as pessoas identifiquem o preconceito, mesmo quando ele é sutil ou “velado”. Isso ajuda a sociedade ao:</p>
+                        <ul>
+                            <li>Capacitar para respostas assertivas: ensinar como estabelecer limites claros e usar frases prontas para interromper ofensas de forma firme e calma.</li>
+                            <li>Criar redes de apoio: incentivar a busca por comunidades que ofereçam suporte emocional e segurança para quem enfrenta a exclusão.</li>
+                            <li>Garantir direitos: mostrar como registrar situações de preconceito em escolas ou empresas para fundamentar medidas legais ou administrativas.</li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>2. Construção de um Respeito Intercultural Real</summary>
+                        <p>O respeito vai além de apenas “aceitar” o outro; trata-se de valorizar as diferenças como um ganho para todos. Esse processo melhora a vida social pois:</p>
+                        <ul>
+                            <li>Combate a xenofobia e o medo: ao incentivar o estudo de outras histórias e religiões, desconstroem-se os filtros e preconceitos que nos impedem de ver o outro como igual.</li>
+                            <li>Amplia o conhecimento: o contato com novas culturas (culinária, artes e costumes) enriquece o repertório dos cidadãos e melhora a integração em cidades cada vez mais diversas.</li>
+                            <li>Melhora o convívio escolar e profissional: cria ambientes onde todos se sentem acolhidos, o que aumenta a autoestima dos estudantes e a produtividade no trabalho.</li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>3. O Papel Ativo da Comunidade (Aliados)</summary>
+                        <p>A sociedade evolui quando pessoas que não sofrem o preconceito diretamente decidem agir para interrompê-lo. Esses aliados são essenciais para:</p>
+                        <ul>
+                            <li>Intervir em injustiças: não ficar em silêncio diante de piadas ou comentários ofensivos, utilizando sua posição para educar e proteger a vítima.</li>
+                            <li>Corrigir informações falsas: atuar como um facilitador do diálogo, esclarecendo mentiras ou estereótipos dentro de seus círculos de amigos e familiares.</li>
+                            <li>Promover igualdade de oportunidades: garantir que o acesso a empregos e educação seja justo para todos, combatendo a desigualdade social que ainda atinge minorias.</li>
+                        </ul>
+                    </details>
+
+                    <p>Em resumo, essas práticas preparam os cidadãos para viver em um mundo globalizado, transformando a diversidade em uma oportunidade de crescimento coletivo, em vez de uma fonte de conflito.</p>
+                </section>
+            </main>
+        </div>
+
+        <footer class="footer">© 2026 Global Speakers • Diversidade Cultural</footer>
+    </div>
+</body>
+</html>

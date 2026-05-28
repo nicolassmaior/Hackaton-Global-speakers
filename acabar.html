@@ -1,0 +1,139 @@
+<html>
+<head>
+    <title>Global Speakers - Como acabar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        details {
+            margin-bottom: 1rem;
+            border: 1px solid rgba(0,0,0,0.12);
+            border-radius: 16px;
+            background: transparent;
+            overflow: hidden;
+        }
+        summary {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1rem 1.1rem;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #07265d;
+            background: transparent;
+            border-radius: 16px;
+            transition: background 0.2s ease, color 0.2s ease;
+            list-style: none;
+            outline: none;
+        }
+        summary:hover,
+        details[open] summary {
+            background: rgba(4, 50, 120, 0.06);
+        }
+        summary::-webkit-details-marker,
+        summary::marker {
+            display: none;
+        }
+        summary::after {
+            content: "▼";
+            font-size: 0.8rem;
+            transform: rotate(0deg);
+            transition: transform 0.2s ease;
+        }
+        details[open] summary::after {
+            transform: rotate(-180deg);
+        }
+        details > *:not(summary) {
+            padding: 0 1.1rem 1rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">
+                <span class="logo">GS</span>
+                <div>
+                    <div class="brand-name">Global Speakers</div>
+                    <div class="brand-tag">Diversidade Cultural</div>
+                </div>
+            </div>
+            <nav class="topnav" aria-label="Menu principal">
+                <a href="index.html">Missão</a>
+                <a href="defender.html">Como se defender</a>
+                <a href="respect.html">Como respeitar</a>
+                <a href="acabar.html">Como acabar</a>
+                <a href="impact.html">Impacto</a>
+            </nav>
+        </header>
+
+        <div class="panel-grid">
+            <aside class="sidebar" aria-label="Menu lateral">
+                <div class="sidebar-title">Navegações</div>
+                <a class="sidebar-item " href="index.html">Missão</a>
+                <a class="sidebar-item " href="defender.html">Como se defender</a>
+                <a class="sidebar-item " href="respect.html">Como respeitar</a>
+                <a class="sidebar-item active" href="acabar.html">Como acabar</a>
+                <a class="sidebar-item " href="impact.html">Impacto</a>
+            </aside>
+
+            <main class="content">
+                <section class="hero">
+                    <div class="hero-copy">
+                        <span class="eyebrow">Futuro inclusivo</span>
+                        <h1>Diversidade cultural com atitude digital</h1>
+                        <p>Global Speakers é um espaço futurista e sério para entender como respeitar culturas, combater preconceito e construir diálogo coletivo.</p>
+                    </div>
+                    <div class="hero-visual" aria-hidden="true">
+                        <div class="glow-panel">
+                            <div class="glow-ring"></div>
+                            <div class="glow-core"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="tab-content active" id="acabar">
+                    <h2>Como acabar com a xenofobia</h2>
+                    <p>Entenda estratégias práticas para combater a xenofobia, promover inclusão e fortalecer uma convivência mais justa entre pessoas de diferentes origens.</p>
+
+                    <details>
+                        <summary>1. Educação e conscientização</summary>
+                        <p>O combate à xenofobia começa pela educação. Debate aberto sobre etnocentrismo, racismo e direitos humanos ajuda a transformar o medo do diferente em compreensão e empatia.</p>
+                        <p>A educação contínua deve ocorrer em escolas, comunidades e ambientes de trabalho, ampliando a percepção de que a diversidade é uma força e não uma ameaça.</p>
+                    </details>
+
+                    <details>
+                        <summary>2. Incentivo à interação cultural</summary>
+                        <p>Promover convívio direto entre pessoas de origens diferentes reduz preconceitos. Eventos culturais, feiras gastronômicas, grupos de troca de idiomas e programas de mentoria são formas práticas de criar conexão.</p>
+                        <p>Quando convivemos com outras culturas, passamos a reconhecer valores comuns e a valorizar a riqueza das diferenças.</p>
+                    </details>
+
+                    <details>
+                        <summary>3. Políticas públicas inclusivas</summary>
+                        <p>O Estado tem papel fundamental no combate à xenofobia. Políticas que asseguram acesso igualitário a educação, saúde, moradia e emprego ajudam a criar oportunidades reais para imigrantes e refugiados.</p>
+                        <p>Leis de proteção, canais de denúncia eficientes e programas de apoio jurídico e psicológico tornam a inclusão uma prática concreta.</p>
+                    </details>
+
+                    <details>
+                        <summary>4. Mídia responsável</summary>
+                        <p>A mídia influencia como as pessoas veem o mundo. Coberturas responsáveis e narrativas positivas contribuem para reduzir estereótipos e impedir a propagação de discursos de ódio.</p>
+                        <p>Notícias corretas, evitando desinformação e sensacionalismo, ajudam a construir uma cultura de respeito e acolhimento.</p>
+                    </details>
+
+                    <details>
+                        <summary>5. Seu papel pessoal</summary>
+                        <p>Cada pessoa pode ser aliada no combate à xenofobia. Ler, assistir documentários, participar de eventos culturais e corrigir preconceitos em conversas são atitudes poderosas.</p>
+                        <p>Ouvir com empatia, evitar julgamentos e intervir quando necessário mostra que migrar é um direito humano e que o respeito é essencial para uma sociedade diversa.</p>
+                    </details>
+                </section>
+            </main>
+        </div>
+
+        <footer class="footer">© 2026 Global Speakers • Diversidade Cultural</footer>
+    </div>
+</body>
+</html>
